@@ -42,7 +42,7 @@
                         </div>
                     </div> 
                     <div class="row">
-                            <img src="/images/bathrooms.jpg" id="image-swap-karen" style="width: 650px">
+                            <img src="https://luisbch9.github.io/analysis_social_spatial_airbnb/public/images/bathrooms.jpg" id="image-swap-karen" style="width: 650px">
     
                     </div>
             
@@ -74,7 +74,7 @@
                     </div>
                     
                     <div class="row">
-                        <img src="/moran/calculated_host_listings_count@availability_365.png" id="image-swap" style="width: 7 50px">
+                        <img src="https://luisbch9.github.io/analysis_social_spatial_airbnb/public/moran/calculated_host_listings_count@availability_365.png" id="image-swap" style="width: 7 50px">
 
                     </div>
 
@@ -89,21 +89,21 @@
                 $('select').formSelect();
 
                 $('#atributo1').change( function() {    
-                    let ruta = "/moran/"+$(this).val()+"@"+$('#atributo2').val()+".png";
+                    let ruta = "https://luisbch9.github.io/analysis_social_spatial_airbnb/public/moran/"+$(this).val()+"@"+$('#atributo2').val()+".png";
                     console.log(ruta);
                     
                     $("#image-swap").attr("src",ruta);
                 });
 
                 $('#atributo2').change( function() {    
-                    let ruta = "/moran/"+$('#atributo1').val()+"@"+$(this).val()+".png";
+                    let ruta = "https://luisbch9.github.io/analysis_social_spatial_airbnb/public/moran/"+$('#atributo1').val()+"@"+$(this).val()+".png";
                     console.log(ruta);
                     
                     $("#image-swap").attr("src",ruta);
                 });
 
                 $('#preciovs').change( function() {  
-                    let ruta = "/images/"+$('#preciovs').val()+".jpg";
+                    let ruta = "https://luisbch9.github.io/analysis_social_spatial_airbnb/public/images/"+$('#preciovs').val()+".jpg";
                     console.log(ruta);
                     $("#image-swap-karen").attr("src",ruta);
                 });
